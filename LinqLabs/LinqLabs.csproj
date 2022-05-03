@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
@@ -76,6 +78,20 @@
     <Compile Include="5. FrmLinq_To_Entity.Designer.cs">
       <DependentUpon>5. FrmLinq_To_Entity.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdventureDataSet.cs">
+      <DependentUpon>AdventureDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdventureDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdventureDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frm作業2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm作業2.Designer.cs">
+      <DependentUpon>Frm作業2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm作業_1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +120,9 @@
     <EmbeddedResource Include="5. FrmLinq_To_Entity.resx">
       <DependentUpon>5. FrmLinq_To_Entity.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm作業2.resx">
+      <DependentUpon>Frm作業2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm作業_1.resx">
       <DependentUpon>Frm作業_1.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +136,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="AdventureDataSet.xsc">
+      <DependentUpon>AdventureDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AdventureDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdventureDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AdventureDataSet.xss">
+      <DependentUpon>AdventureDataSet.xsd</DependentUpon>
+    </None>
     <None Include="NWDataSet1.xsc">
       <DependentUpon>NWDataSet1.xsd</DependentUpon>
     </None>

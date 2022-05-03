@@ -14,7 +14,7 @@ namespace MyHomeWork
     {
         int take_old;
         int skip = 0;
-        bool flag = true;
+        //bool flag = true;
         
 
         public Frm作業_1()
@@ -46,11 +46,11 @@ namespace MyHomeWork
 
 
 
-
+             skip += take;
 
             this.dataGridView1.DataSource = q.Skip(skip).Take(take).ToList();
 
-            skip += take;
+           
             take_old = take;
             //this.nwDataSet11.Products.Take(10);//Top 10 Skip(10)
 
@@ -172,8 +172,6 @@ namespace MyHomeWork
             //{
             //    return;
             //}
-
-          
 
             skip -= take;
 

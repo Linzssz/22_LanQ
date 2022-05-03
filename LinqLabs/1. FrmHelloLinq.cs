@@ -107,7 +107,7 @@ namespace Starter
             //  }
 
             // return n % 2 == 0 ? true : false;
-            return n % 2 == 0; return n % 2 == 0;
+            return n % 2 == 0; 
         }
 
         private void button7_Click(object sender, EventArgs e)
